@@ -409,18 +409,20 @@ width: calc((100% - 72px) / 4)
 .menu-item-fourth{
 width: calc((100% - 48px) / 3);
 transition: box-shadow 250ms cubic-bezier(0.4, 0, 0.2, 1);
+ 
+}
+.menu-item-fourth:hover{
+    box-shadow: 0px 1px 6px rgba(46, 47, 66, 0.08),
+ 0px 1px 1px rgba(46, 47, 66, 0.16),
+  0px 2px 1px rgba(46, 47, 66, 0.08);
 }
 
-.menu-item-fourth:hover, 
-.menu-item-fourth:focus {
-        box-shadow: 0px 2px 1px 0px
-         rgba(46, 47, 66, 0.08),
-            0px 1px 1px 0px rgba(46, 47, 66, 0.16),
-            0px 1px 6px 0px rgba(46, 47, 66, 0.08);
+.menu-item-fourth:hover .overlay{
 
-        transform: translateY(0%);
-    
+     transform:translateY(0%) ;
+    transition: transform 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
+
 
 
 .portfolio-list-img-wrapper{
@@ -429,7 +431,6 @@ transition: box-shadow 250ms cubic-bezier(0.4, 0, 0.2, 1);
     
 }
 
-    
 .overlay{
     position: absolute;
     top:0;
